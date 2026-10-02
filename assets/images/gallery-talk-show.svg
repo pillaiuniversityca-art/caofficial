@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgTalk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="50%" stop-color="#0a1d30"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgTalk)"/>
+
+  <!-- Audio Waveform Graphic Lines -->
+  <g stroke="rgba(0,240,255,0.12)" stroke-width="1.5">
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <circle cx="400" cy="230" r="140" fill="none" stroke="rgba(0,240,255,0.06)" stroke-width="2"/>
+    <circle cx="400" cy="230" r="180" fill="none" stroke="rgba(0,240,255,0.04)" stroke-width="1"/>
+  </g>
+
+  <!-- Central Microphone Graphic -->
+  <circle cx="400" cy="230" r="90" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="2" filter="url(#glowCyan)"/>
+  
+  <!-- Microphone Shape -->
+  <rect x="382" y="180" width="36" height="64" rx="18" fill="#00f0ff" filter="url(#glowCyan)"/>
+  <path d="M 370 215 C 370 255 430 255 430 215" fill="none" stroke="#00f0ff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="400" y1="255" x2="400" y2="285" stroke="#00f0ff" stroke-width="5"/>
+  <line x1="380" y1="285" x2="420" y2="285" stroke="#00f0ff" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Title -->
+  <text x="400" y="385" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="3">TECH TALK SHOW</text>
+  <text x="400" y="420" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#00f0ff" text-anchor="middle" letter-spacing="4">PANEL DISCUSSIONS // INDUSTRY VOICES</text>
+
+  <!-- Instruction Badge -->
+  <rect x="230" y="465" width="340" height="38" rx="19" fill="rgba(255,255,255,0.06)" stroke="rgba(0,240,255,0.3)" stroke-width="1"/>
+  <text x="400" y="489" font-family="'JetBrains Mono', monospace" font-size="12" fill="#9aa5be" text-anchor="middle">[ REPLACE WITH YOUR TALK SHOW PHOTO ]</text>
+</svg>

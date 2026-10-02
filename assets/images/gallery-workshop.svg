@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a14"/>
+      <stop offset="100%" stop-color="#1b122c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgWs)"/>
+  <rect x="80" y="60" width="640" height="360" rx="12" fill="#0d1020" stroke="#9d00ff" stroke-width="2"/>
+  <text x="400" y="160" font-family="'JetBrains Mono', monospace" font-size="14" fill="#00f0ff" text-anchor="middle">CONCLAVE 1 // 120 CAPACITY SEATS</text>
+  <text x="400" y="220" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle">CLOUD &amp; CYBER MASTERCLASSES</text>
+  <text x="400" y="270" font-family="'Press Start 2P', monospace" font-size="13" fill="#ffd700" text-anchor="middle">VERIFIED CERTIFICATION WORKSHOPS</text>
+  <rect x="220" y="320" width="360" height="30" rx="6" fill="rgba(157, 0, 255, 0.15)" stroke="#9d00ff" stroke-width="1"/>
+  <text x="400" y="340" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f0ff" text-anchor="middle">[ PLACEHOLDER PHOTO: CONCLAVE WORKSHOPS ]</text>
+</svg>

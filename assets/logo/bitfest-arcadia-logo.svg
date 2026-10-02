@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="neonPinkCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#9d00ff" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff59d" />
+      <stop offset="100%" stop-color="#ffb300" />
+    </linearGradient>
+    <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Top Badge -->
+  <rect x="200" y="15" width="200" height="24" rx="4" fill="#0c0e18" stroke="#00f0ff" stroke-width="1.5"/>
+  <text x="300" y="31" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00f0ff" letter-spacing="3" text-anchor="middle">BITFEST 2026 // FLAGSHIP</text>
+
+  <!-- Main Word: ARCADIA -->
+  <text x="300" y="115" font-family="'Space Grotesk', sans-serif" font-size="74" font-weight="900" fill="url(#neonPinkCyan)" letter-spacing="8" text-anchor="middle" filter="url(#cyberGlow)">ARCADIA</text>
+
+  <!-- Subtitle Ribbon -->
+  <text x="300" y="150" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#ffd700" letter-spacing="5" text-anchor="middle">FROM ARCADE THRILLS TO REAL WORLD SKILLS</text>
+
+  <!-- Arcade Pixel Glitch Accents -->
+  <rect x="50" y="90" width="16" height="4" fill="#00f0ff" opacity="0.8"/>
+  <rect x="70" y="96" width="24" height="4" fill="#ff007f" opacity="0.8"/>
+  <rect x="526" y="90" width="24" height="4" fill="#00f0ff" opacity="0.8"/>
+  <rect x="510" y="96" width="16" height="4" fill="#ffd700" opacity="0.8"/>
+  
+  <line x1="120" y1="170" x2="480" y2="170" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.5"/>
+</svg>

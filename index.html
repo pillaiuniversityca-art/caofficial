@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Association | 25 Years Silver Jubilee • BITFEST 2027</title>
+  <meta name="description"
+    content="Computer Association, School of Computing, Pillai University celebrates 25 Years Silver Jubilee (2002–2027). Explore our 7 core departments, BITFEST 2027, and download Bitfest 2026 participant certificates.">
+  <meta name="keywords"
+    content="Computer Association, Pillai University, School of Computing, Silver Jubilee, 25 Years, BITFEST 2027, BITFEST 2026 Certificates, Departments, Tech Fest">
+  <meta name="author" content="Computer Association, Pillai University">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Computer Association | 25 Years Silver Jubilee • BITFEST 2027">
+  <meta property="og:description"
+    content="Celebrating 25 Years Silver Jubilee of Innovation in School of Computing under Pillai University.">
+  <meta property="og:image" content="assets/logo/ca-emblem.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/ca-emblem.png">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap">
+
+  <!-- Core & Animation Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Subtle Ambient Texture Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Global Header & Navigation (Proper & Elegant) -->
+  <header>
+    <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <!-- Dual Brand Identity with Subtitle Line -->
+        <a href="index.html" class="nav-brand" aria-label="Computer Association Home">
+          <div class="nav-brand-logos">
+            <img src="assets/logo/pillai-logo.png" alt="Pillai University Shield" class="nav-logo-pillai">
+            <img src="assets/logo/ca-emblem.png" alt="Computer Association Emblem" class="nav-logo-ca">
+          </div>
+          <div class="nav-brand-text">
+            <span class="nav-brand-title">COMPUTER ASSOCIATION</span>
+            <span class="nav-brand-sub">Pillai University | CA 25 Years</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link active"><i class="fas fa-house"></i> HOME</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-landmark"></i> ABOUT CA</a></li>
+          <li><a href="#departments" class="nav-link"><i class="fas fa-sitemap"></i> DEPARTMENTS</a></li>
+          <li><a href="#bitfestOverview" class="nav-link"><i class="fas fa-award"></i> BITFEST RECAP</a></li>
+          <li><a href="#bitfest2027" class="nav-link"><i class="fas fa-crown"></i> BITFEST 2027</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> CONTACT</a></li>
+          <li class="mobile-only-cert">
+            <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="btn btn-royal-cert btn-sm" style="width: 100%; margin-top: 0.8rem; text-align: center;">
+              <i class="fas fa-certificate"></i> BITFEST 2026 CERTIFICATES
+            </a>
+          </li>
+        </ul>
+
+        <!-- Right Side Nav Action: Direct Certificate Drive Link -->
+        <div class="nav-cta-wrapper">
+          <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="cert-nav-badge" title="Download Bitfest 2026 Participants Certificates">
+            <i class="fas fa-certificate"></i>
+            <span>BITFEST 2026 CERTIFICATES</span>
+          </a>
+
+          <!-- Mobile Menu Hamburger -->
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: 25 YEARS SILVER JUBILEE & BITFEST 2027 FOCUS -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive Royal Celestial Canvas -->
+      <canvas class="hero-canvas" id="heroArcadeCanvas"></canvas>
+
+      <div class="container hero-content">
+        <!-- Animated Opening Royal Ribbon -->
+        <div class="royal-ribbon-banner">
+          <i class="fas fa-award"></i>
+          <span>CELEBRATING 25 YEARS • SILVER JUBILEE (2002–2027)</span>
+        </div>
+
+        <!-- Crest Badges -->
+        <div class="hero-top-badges reveal-on-scroll">
+          <span class="pillai-crest-badge">
+            <img src="assets/logo/pillai-logo.png" alt="Pillai University Crest"> PILLAI UNIVERSITY
+          </span>
+          <span class="silver-jubilee-badge">
+            <i class="fas fa-crown"></i> SCHOOL OF COMPUTING • EST. 2002
+          </span>
+          <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="section-tag gold" style="margin: 0; text-decoration: none;">
+            <i class="fas fa-certificate"></i> BITFEST 2026 CONCLUDED • CERTIFICATES READY
+          </a>
+        </div>
+
+        <!-- Official CA Fest Emblem Presentation -->
+        <div class="hero-fest-logo-wrap reveal-on-scroll">
+          <img src="assets/logo/bitfest-logo.png" alt="BITFEST - Everything Starts with a Bit"
+            class="hero-fest-logo-img">
+        </div>
+
+        <!-- Hero Typography -->
+        <div class="hero-title-group reveal-on-scroll reveal-delay-1">
+          <span class="hero-subheading">COMPUTER ASSOCIATION • SCHOOL OF COMPUTING</span>
+          <h1 class="hero-main-title">25 YEARS SILVER JUBILEE</h1>
+          <h2 class="hero-theme-title gradient-text-royal">BITFEST 2027</h2>
+        </div>
+
+        <p class="hero-slogan gradient-text-gold reveal-on-scroll reveal-delay-2">
+          "A QUARTER CENTURY OF COMPUTING EXCELLENCE • THE ROYAL HORIZON"
+        </p>
+
+        <p class="hero-desc reveal-on-scroll reveal-delay-3">
+          From foundational student initiatives in 2002 to becoming Pillai University's premier innovation powerhouse,
+          the Computer Association commemorates 25 historic years of student autonomy, technological mastery, and
+          visionary leadership as we herald the royal era of <strong>BITFEST 2027</strong>.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group reveal-on-scroll reveal-delay-4">
+          <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="btn btn-royal-cert btn-shimmer">
+            <i class="fas fa-certificate"></i> BITFEST 2026 PARTICIPANTS CERTIFICATES <i
+              class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="#departments" class="btn btn-primary">
+            <i class="fas fa-sitemap"></i> EXPLORE 7 DEPARTMENTS
+          </a>
+          <a href="#bitfest2027" class="btn btn-secondary">
+            <i class="fas fa-crown"></i> BITFEST 2027 PREVIEW
+          </a>
+        </div>
+
+        <!-- Telemetry Numbers Bar -->
+        <div class="hero-telemetry-bar reveal-on-scroll">
+          <div class="telemetry-item">
+            <div class="telemetry-value gradient-text-gold" data-counter-target="25" data-counter-suffix=" Yrs">0</div>
+            <div class="telemetry-label">Silver Jubilee Heritage</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value gradient-text-royal" data-counter-target="7" data-counter-suffix=" Teams">0
+            </div>
+            <div class="telemetry-label">Core CA Departments</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value" style="color: var(--royal-purple);" data-counter-target="10000"
+              data-counter-suffix="+">0</div>
+            <div class="telemetry-label">Engineers &amp; Alumni</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value" style="color: var(--royal-gold);" data-counter-target="27"
+              data-counter-prefix="Fest ">0</div>
+            <div class="telemetry-label">Next Flagship Era</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BITFEST OVERVIEW & CERTIFICATES DUO SECTION -->
+    <section class="section-spacing" id="bitfestOverview"
+      style="background: #ffffff; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag gold"><i class="fas fa-trophy"></i> FLAGSHIP FESTIVAL SHOWCASE</span>
+          <h2 class="section-title">THE BITFEST <span class="gradient-text-royal">MILESTONE</span></h2>
+          <p class="section-subtitle">
+            Celebrating the triumphant conclusion of Bitfest 2026 and providing instant verification access for all
+            official participant certificates.
+          </p>
+        </div>
+
+        <div class="bitfest-duo-grid">
+          <!-- CARD 1: WHAT IS BITFEST & HOW BITFEST 2026 SUCCESSFULLY CONCLUDED -->
+          <div class="bitfest-overview-card tilt-card reveal-on-scroll">
+            <div class="card-corner-ribbon">CONCLUDED</div>
+            <div>
+              <div class="card-top-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3 class="bitfest-card-title">What is BITFEST &amp; How Bitfest 2026 Successfully Concluded</h3>
+              <div class="bitfest-card-sub">Pillai University's Premier Annual Tech Fest</div>
+              <p class="bitfest-card-text">
+                <strong>BITFEST</strong> is the premier annual technical festival organized by the <strong>Computer
+                  Association, School of Computing at Pillai University</strong>. It brings together engineering
+                innovators, competitive coders, designers, and tech enthusiasts from across the university to solve
+                real-world problems.
+              </p>
+              <p class="bitfest-card-text">
+                <strong>Bitfest 2026 has officially concluded with resounding success!</strong> Over two electrifying
+                days (09th &amp; 10th September 2026), the festival welcomed <strong>500+ participants</strong>, hosted
+                an intense <strong>8-Hour Mini Hackathon</strong>, debugging sprints, AI prompt engineering challenges,
+                and 4 certified industry masterclasses in Cybersecurity, Cloud, and Generative AI.
+              </p>
+
+              <!-- Success Stat Highlights -->
+              <div class="bitfest-stats-row">
+                <div class="bitfest-stat-item">
+                  <div class="stat-num">1000+</div>
+                  <div class="stat-lbl">Participants</div>
+                </div>
+                <div class="bitfest-stat-item">
+                  <div class="stat-num">10</div>
+                  <div class="stat-lbl">Arenas &amp; Masterclasses</div>
+                </div>
+                <div class="bitfest-stat-item">
+                  <div class="stat-num">₹10,000+</div>
+                  <div class="stat-lbl">Cash Awards &amp; Trophies</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="bitfest-2026.html" class="btn btn-secondary btn-sm" style="flex: 1;">
+                <i class="fas fa-clock-rotate-left"></i> VIEW BITFEST 2026 RECAP
+              </a>
+              <a href="#bitfest2027" class="btn btn-primary btn-sm" style="flex: 1;">
+                <i class="fas fa-crown"></i> DISCOVER BITFEST 2027
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 2: BITFEST 2026 PARTICIPANTS CERTIFICATES -->
+          <div class="certificate-hero-card tilt-card reveal-on-scroll reveal-delay-1">
+            <div class="card-corner-ribbon royal">VERIFIED DRIVE</div>
+            <div>
+              <div class="card-top-icon" style="background: var(--royal-gold-light); color: var(--royal-gold);">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3 class="bitfest-card-title">Bitfest 2026 Participants Certificates</h3>
+              <div class="bitfest-card-sub" style="color: var(--royal-blue);">Official Verification &amp; Cloud Drive
+                Access</div>
+              <p class="bitfest-card-text">
+                With Bitfest 2026 officially completed, all registration and payment windows are permanently closed.
+                Verified E-Certificates for all registered participants across all hackathons, competitive challenges,
+                and certified masterclasses are now accessible for instant download.
+              </p>
+
+              <div
+                style="background: var(--royal-blue-light); border: 1.5px solid rgba(37, 99, 235, 0.2); border-radius: var(--radius-sm); padding: 1.4rem; margin-bottom: 1.8rem;">
+                <div
+                  style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 800; color: var(--royal-blue); margin-bottom: 6px;">
+                  <i class="fas fa-circle-check"></i> 100% Verified Certificates Released
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                  All certificates have been organized by event domain and participant name within the official Computer
+                  Association Google Drive directory. Click the portal below to find and download your credential.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="btn btn-royal-cert btn-shimmer"
+                style="width: 100%; text-align: center; justify-content: center; padding: 16px 24px; font-size: 1rem;">
+                <i class="fas fa-file-arrow-down"></i> BITFEST 2026 PARTICIPANTS CERTIFICATES <i
+                  class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 25 YEARS OF CA: SILVER JUBILEE HERITAGE -->
+    <section class="section-spacing" id="aboutLegacy" style="background: #ffffff;">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-top-badges">
+            <span class="pillai-crest-badge">
+              <img src="assets/logo/pillai-logo.png" alt="Pillai University"> SCHOOL OF COMPUTING • PILLAI UNIVERSITY
+            </span>
+            <span class="section-tag gold"><i class="fas fa-crown"></i> 25-YEAR SILVER JUBILEE</span>
+          </div>
+          <h2 class="section-title">
+            25 YEARS OF COMPUTER ASSOCIATION: <br>
+            <span class="gradient-text-gold">AN EXTRAORDINARY SILVER JUBILEE</span>
+          </h2>
+          <p class="section-subtitle">
+            Established in 2002 under the School of Computing at Pillai University, the Computer Association has evolved
+            from early student coding circles into an autonomous powerhouse of leadership, engineering rigor, and
+            flagship innovation.
+          </p>
+        </div>
+
+        <div class="journey-showcase-grid">
+          <!-- Big 25 Animated Silver Jubilee Box -->
+          <div class="legacy-badge-box tilt-card reveal-on-scroll">
+            <div class="big-number-25" data-counter-target="25">25</div>
+            <div class="big-number-sub">YEARS SILVER JUBILEE (2002–2027)</div>
+            <p class="legacy-quote">
+              "Fostering student autonomy, algorithmic mastery, and visionary engineering under the esteemed umbrella of
+              Pillai University for a quarter of a century."
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="about.html" class="btn btn-secondary btn-sm">
+                EXPLORE FULL 25-YEAR LEGACY <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4 Journey Pillar Cards Grid -->
+          <div class="journey-cards-grid reveal-on-scroll reveal-delay-1">
+            <!-- Journey Card 1 -->
+            <div class="journey-card">
+              <div class="journey-card-icon">
+                <i class="fas fa-landmark"></i>
+              </div>
+              <h3 class="journey-card-title">Genesis in Computing (2002)</h3>
+              <p class="journey-card-desc">
+                Founded under the School of Computing, Pillai University to build an elite student-led sanctuary where
+                classroom computer science converts into real-world production software.
+              </p>
+            </div>
+
+            <!-- Journey Card 2 -->
+            <div class="journey-card gold">
+              <div class="journey-card-icon">
+                <i class="fas fa-users-gear"></i>
+              </div>
+              <h3 class="journey-card-title">Student Autonomy &amp; Governance</h3>
+              <p class="journey-card-desc">
+                Governed 100% by passionate student leaders across 7 specialized departments, empowering every
+                generation to conceptualize and execute campus-wide tech festivals.
+              </p>
+            </div>
+
+            <!-- Journey Card 3 -->
+            <div class="journey-card purple">
+              <div class="journey-card-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3 class="journey-card-title">Technological Mastery</h3>
+              <p class="journey-card-desc">
+                From foundational algorithmic sprints to Generative AI architectures, cloud-native deployments, and
+                modern cybersecurity arenas.
+              </p>
+            </div>
+
+            <!-- Journey Card 4 -->
+            <div class="journey-card emerald">
+              <div class="journey-card-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3 class="journey-card-title">BITFEST &amp; 10,000+ Alumni</h3>
+              <p class="journey-card-desc">
+                Spearheading BITFEST as our flagship spectacle, sustained by an unbroken 25-year network of 10,000+
+                alumni driving innovation across global tech giants and startups.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPARTMENTS UNDER COMPUTER ASSOCIATION (HIGHLIGHTED SECTION) -->
+    <section class="section-spacing departments-section" id="departments">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-sitemap"></i> CORE ORGANIZATIONAL PILLARS</span>
+          <h2 class="section-title">DEPARTMENTS UNDER <br><span class="gradient-text-royal">COMPUTER ASSOCIATION</span>
+          </h2>
+          <p class="section-subtitle">
+            The Computer Association operates through 7 specialized, highly synchronized departments. Each team
+            contributes unique creative, operational, technical, and strategic strengths to deliver flawless execution
+            for BITFEST and year-round technical excellence.
+          </p>
+        </div>
+
+        <div class="departments-grid">
+          <!-- 1. Publicity -->
+          <div class="dept-card dept-publicity reveal-on-scroll">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <span class="dept-badge">OUTREACH &amp; CAMPAIGNS</span>
+            </div>
+            <h3 class="dept-title">Publicity</h3>
+            <p class="dept-desc">
+              The dynamic outreach engine of the Computer Association. The Publicity Department spearheads campus-wide
+              awareness, classroom roadshows, inter-collegiate communications, and strategic sponsorships.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Campus &amp; inter-college roadshows</li>
+              <li><i class="fas fa-check-circle"></i> Sponsor alignment &amp; university liaison</li>
+              <li><i class="fas fa-check-circle"></i> Audience mobilization for flagship BITFEST</li>
+            </ul>
+          </div>
+
+          <!-- 2. Social Media -->
+          <div class="dept-card dept-social reveal-on-scroll reveal-delay-1">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-share-nodes"></i>
+              </div>
+              <span class="dept-badge">ENGAGEMENT &amp; CHANNELS</span>
+            </div>
+            <h3 class="dept-title">Social Media</h3>
+            <p class="dept-desc">
+              Crafting our digital footprint and community pulse. Manages official handles across Instagram, LinkedIn,
+              and YouTube, orchestrating high-engagement campaigns, reel series, and real-time live event broadcasts.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> High-octane reel &amp; story campaigns</li>
+              <li><i class="fas fa-check-circle"></i> Professional LinkedIn networking &amp; updates</li>
+              <li><i class="fas fa-check-circle"></i> Active student community interactions</li>
+            </ul>
+          </div>
+
+          <!-- 3. Graphics -->
+          <div class="dept-card dept-graphics reveal-on-scroll reveal-delay-2">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-palette"></i>
+              </div>
+              <span class="dept-badge">VISUAL ARCHITECTURE</span>
+            </div>
+            <h3 class="dept-title">Graphics</h3>
+            <p class="dept-desc">
+              The visual architects shaping the identity of CA and BITFEST. From majestic brand guides and fest banners
+              to social media creatives, UI design, badges, and official festival merchandise.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Comprehensive fest branding &amp; visual themes</li>
+              <li><i class="fas fa-check-circle"></i> High-definition print posters &amp; banners</li>
+              <li><i class="fas fa-check-circle"></i> Merchandise, passes &amp; digital asset design</li>
+            </ul>
+          </div>
+
+          <!-- 4. Content -->
+          <div class="dept-card dept-content reveal-on-scroll">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-pen-nib"></i>
+              </div>
+              <span class="dept-badge">EDITORIAL &amp; NARRATIVE</span>
+            </div>
+            <h3 class="dept-title">Content</h3>
+            <p class="dept-desc">
+              The literary soul and narrative spine of CA. Authoring event rulebooks, hackathon problem tracks, press
+              releases, formal communications, keynote scripts, and thought leadership articles like "Voices of CA".
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Official problem statements &amp; event rulebooks</li>
+              <li><i class="fas fa-check-circle"></i> Keynote scripts &amp; stage hosting narratives</li>
+              <li><i class="fas fa-check-circle"></i> Press releases &amp; archival newsletters</li>
+            </ul>
+          </div>
+
+          <!-- 5. Creatives -->
+          <div class="dept-card dept-creatives reveal-on-scroll reveal-delay-1">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="dept-badge">EXPERIENTIAL &amp; AMBIANCE</span>
+            </div>
+            <h3 class="dept-title">Creatives</h3>
+            <p class="dept-desc">
+              Transforming physical spaces into awe-inspiring thematic realities. Designing immersive stage backdrops,
+              interactive installations, trophy aesthetics, and photo-op arenas that define the unforgettable BITFEST
+              vibe.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Thematic stage &amp; atrium installations</li>
+              <li><i class="fas fa-check-circle"></i> Custom trophy design &amp; award aesthetics</li>
+              <li><i class="fas fa-check-circle"></i> Experiential campus decor &amp; photo booths</li>
+            </ul>
+          </div>
+
+          <!-- 6. MIS (Management Information Systems) -->
+          <div class="dept-card dept-mis reveal-on-scroll reveal-delay-2">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="dept-badge">DATA &amp; INFRASTRUCTURE</span>
+            </div>
+            <h3 class="dept-title">MIS</h3>
+            <p class="dept-desc">
+              The operational bedrock and data intelligence backbone. Managing participant databases, attendance
+              tracking, leaderboard calculations, logistics scheduling, certificate registries, and technical portal
+              integrity.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Central participant data architecture</li>
+              <li><i class="fas fa-check-circle"></i> Real-time scoring systems &amp; analytics</li>
+              <li><i class="fas fa-check-circle"></i> E-Certificate verification &amp; tracking</li>
+            </ul>
+          </div>
+
+          <!-- 7. Coverage -->
+          <div class="dept-card dept-coverage reveal-on-scroll"
+            style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto; width: 100%;">
+            <div class="dept-header">
+              <div class="dept-icon-box">
+                <i class="fas fa-camera-retro"></i>
+              </div>
+              <span class="dept-badge">CINEMATICS &amp; ARCHIVES</span>
+            </div>
+            <h3 class="dept-title">Coverage</h3>
+            <p class="dept-desc">
+              Immortalizing every high-energy moment of the Computer Association. Housing our professional photographers
+              and cinematographers who capture 4K festival photography, cinematic aftermovies, drone reels, and archival
+              records.
+            </p>
+            <ul class="dept-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Professional event photography &amp; drone footage</li>
+              <li><i class="fas fa-check-circle"></i> Cinematic festival aftermovies &amp; teaser cuts</li>
+              <li><i class="fas fa-check-circle"></i> Official media archive for historical legacy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BITFEST 2027: THE ROYAL SILVER JUBILEE ERA -->
+    <section class="section-spacing" id="bitfest2027">
+      <div class="container">
+        <div class="bitfest2027-banner reveal-on-scroll">
+          <div class="bitfest2027-content">
+            <span class="section-tag"
+              style="background: rgba(251, 191, 36, 0.2); color: #fbbf24; border-color: rgba(251, 191, 36, 0.4); margin-bottom: 1rem;">
+              <i class="fas fa-crown"></i> NEXT-GEN HORIZON
+            </span>
+            <h2 class="bitfest2027-title">
+              BITFEST 2027 <br>
+              <span
+                style="background: linear-gradient(135deg, #fbbf24, #f59e0b, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">THE
+                SILVER JUBILEE EDITION</span>
+            </h2>
+            <p class="bitfest2027-desc">
+              To celebrate 25 landmark years of the Computer Association, <strong>BITFEST 2027</strong> will be our
+              grandest, most ambitious tech spectacle in Pillai University history. Featuring an expanded national
+              multi-track hackathon, quantum &amp; AI innovation summits, royal trophy cups, and global alumni
+              masterclasses.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-shimmer">
+                <i class="fas fa-certificate"></i> BITFEST 2026 PARTICIPANTS CERTIFICATES
+              </a>
+              <a href="bitfest-2026.html" class="btn btn-secondary"
+                style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.25);">
+                <i class="fas fa-clock-rotate-left"></i> VIEW BITFEST 2026 RECAP
+              </a>
+              <a href="contact.html" class="btn btn-secondary"
+                style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.25);">
+                <i class="fas fa-envelope"></i> CONNECT FOR 2027 COLLABORATION
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICES OF LEADERSHIP (3 HEADS) -->
+    <section class="section-spacing" id="voicesOfLeadership"
+      style="background: #ffffff; border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag purple"><i class="fas fa-feather-pointed"></i> LEADERSHIP PERSPECTIVES</span>
+          <h2 class="section-title">VOICES OF <span class="gradient-text-royal">LEADERSHIP</span></h2>
+          <p class="section-subtitle">Visionary essays and perspectives from the 3 Heads of the Computer Association
+            reflecting on 25 years and our future roadmap.</p>
+        </div>
+
+        <div class="articles-grid">
+          <!-- Article 1 (Head 1) -->
+          <article class="article-card tilt-card reveal-on-scroll">
+            <div class="author-monogram-badge">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div>
+              <div class="author-name">Deepanshu Jadhav</div>
+              <div class="author-role">HEAD, COMPUTER ASSOCIATION</div>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 class="article-card-title">The Philosophy of CA: From 8-Bit Foundations to Modern AI</h3>
+                <p class="article-excerpt">
+                  How problem-solving instincts born in early coding circles cultivate the resilient engineering
+                  mindsets powering modern technology.
+                </p>
+              </div>
+              <a href="articles/article-1.html" class="btn btn-secondary btn-sm" style="align-self: flex-start;">
+                READ ESSAY <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 (Head 2) -->
+          <article class="article-card tilt-card reveal-on-scroll reveal-delay-1">
+            <div class="author-monogram-badge magenta">
+              <i class="fas fa-crown"></i>
+            </div>
+            <div>
+              <div class="author-name">Krishna K. Singh</div>
+              <div class="author-role">HEAD, COMPUTER ASSOCIATION</div>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 class="article-card-title">25 Years of Innovation: The Silver Jubilee Legacy of CA</h3>
+                <p class="article-excerpt">
+                  A retrospective on a quarter of a century of student-driven growth, peer mentorship, and transforming
+                  curious learners into industry leaders.
+                </p>
+              </div>
+              <a href="articles/article-2.html" class="btn btn-secondary btn-sm" style="align-self: flex-start;">
+                READ ESSAY <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 (Head 3) -->
+          <article class="article-card tilt-card reveal-on-scroll reveal-delay-2">
+            <div class="author-monogram-badge gold">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <div>
+              <div class="author-name">Joel Binoy</div>
+              <div class="author-role">HEAD, COMPUTER ASSOCIATION</div>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 class="article-card-title">From Play to Problem-Solving: Hackathons &amp; Real-World Skills</h3>
+                <p class="article-excerpt">
+                  Why high-pressure collaborative sprints bridge the critical gap between academic curriculum and
+                  production-grade software engineering.
+                </p>
+              </div>
+              <a href="articles/article-3.html" class="btn btn-secondary btn-sm" style="align-self: flex-start;">
+                READ ESSAY <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 1rem;">
+            <img src="assets/logo/pillai-logo.png" alt="Pillai University Shield" style="width: 38px; height: auto;">
+            <img src="assets/logo/ca-emblem.png" alt="CA Emblem" style="width: 44px; height: 44px;">
+            <div>
+              <div class="footer-brand-title">COMPUTER ASSOCIATION</div>
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #fbbf24;">
+                PILLAI UNIVERSITY • 25 YEARS SILVER JUBILEE
+              </div>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Empowering students with real-world technology skills, competitive innovation, and visionary leadership
+            since 2002 under the School of Computing, Pillai University.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="https://drive.google.com/drive/folders/1dmcq9ghw45XZvn7oZKkK8Ay9rswQZatS?usp=sharing"
+              target="_blank" rel="noopener noreferrer"
+              style="color: #fbbf24; font-family: var(--font-heading); font-size: 0.88rem; font-weight: 700; text-decoration: underline;">
+              <i class="fas fa-certificate"></i> Download Bitfest 2026 Participants Certificates
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home (Silver Jubilee)</a></li>
+            <li><a href="about.html" class="footer-link">About CA (25 Years)</a></li>
+            <li><a href="#departments" class="footer-link">7 Core Departments</a></li>
+            <li><a href="#bitfestOverview" class="footer-link">BITFEST 2026 Recap</a></li>
+            <li><a href="#bitfest2027" class="footer-link">BITFEST 2027 Preview</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- CA Departments -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Departments</h4>
+          <ul class="footer-links-list">
+            <li><a href="#departments" class="footer-link">Publicity</a></li>
+            <li><a href="#departments" class="footer-link">Social Media</a></li>
+            <li><a href="#departments" class="footer-link">Graphics</a></li>
+            <li><a href="#departments" class="footer-link">Content</a></li>
+            <li><a href="#departments" class="footer-link">Creatives</a></li>
+            <li><a href="#departments" class="footer-link">MIS &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Socials -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect &amp; Follow</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 0.35rem;">
+            School of Computing, Pillai University Campus.
+          </p>
+          <a href="https://maps.app.goo.gl/jk42DVShTvpNgkVe8" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; color: #fbbf24; text-decoration: underline; margin-bottom: 1.1rem;">
+            <i class="fas fa-location-dot"></i> View on Google Maps
+          </a>
+          <div style="display: flex; gap: 12px; margin-bottom: 1.5rem;">
+            <a href="https://www.instagram.com/computerassociation" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/pillaiuniversity-ca/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com/@computerassociation-mes" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:pillaiuniversity.ca@gmail.com" class="social-icon-btn" title="Email Us"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+          <div style="font-size: 0.8rem; color: #64748b; font-family: var(--font-mono);">
+            BITFEST 2027 // THE ROYAL SILVER JUBILEE
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; 2002–2027 Computer Association, Pillai University. 25 Years of Student Leadership.
+        </div>
+        <div class="arcade-motto-tag">
+          "25 YEARS OF EXCELLENCE • STRIVE TO INNOVATE"
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/arcade.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgKey" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0814"/>
+      <stop offset="100%" stop-color="#21102b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#bgKey)"/>
+  <circle cx="300" cy="300" r="180" fill="none" stroke="#ff007f" stroke-width="2" stroke-dasharray="10 6" opacity="0.4"/>
+  <text x="300" y="270" font-family="'JetBrains Mono', monospace" font-size="14" fill="#ffd700" text-anchor="middle" letter-spacing="3">COMPUTER ASSOCIATION</text>
+  <text x="300" y="330" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">BITFEST 2026 KEYNOTE</text>
+  <text x="300" y="375" font-family="'Press Start 2P', monospace" font-size="12" fill="#00f0ff" text-anchor="middle">DAY 1 // INAUGURATION</text>
+  <rect x="120" y="440" width="360" height="34" rx="6" fill="rgba(255, 0, 127, 0.1)" stroke="#ff007f" stroke-width="1"/>
+  <text x="300" y="462" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ff007f" text-anchor="middle">[ PLACEHOLDER PHOTO: AUDITORIUM KEYNOTE ]</text>
+</svg>

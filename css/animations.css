@@ -1,0 +1,192 @@
+/* ==========================================================================
+   COMPUTER ASSOCIATION × 25 YEARS SILVER JUBILEE • BITFEST 2027
+   ROYAL ANIMATIONS, OPENING RIBBONS & MICRO-INTERACTIONS
+   ========================================================================== */
+
+/* --- Keyframe Animations --- */
+
+/* Royal Opening Ribbon Unfold */
+@keyframes ribbonUnfold {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.7) translateY(-20px);
+  }
+  60% {
+    transform: scaleX(1.05) translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) translateY(0);
+  }
+}
+
+/* Subtle Shimmer Slide */
+@keyframes shimmerSlide {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+/* Gold Border Glow Pulse */
+@keyframes borderGlowPulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(217, 119, 6, 0.15), 0 0 0 1px rgba(217, 119, 6, 0.3);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(217, 119, 6, 0.3), 0 0 0 1.5px rgba(245, 158, 11, 0.6);
+  }
+}
+
+/* Gentle Floating Motion */
+@keyframes royalFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Gentle Soft Pulse */
+@keyframes gentleBeacon {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+/* --- Animated Ribbon Elements --- */
+
+.royal-ribbon-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #540817 0%, #7c0d25 50%, #0a192f 100%);
+  color: #ffffff;
+  padding: 9px 24px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 18px rgba(84, 8, 23, 0.3);
+  border: 1.5px solid rgba(212, 175, 55, 0.7);
+  margin-bottom: 1.6rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 95%;
+  animation: ribbonUnfold 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.royal-ribbon-banner i {
+  color: #e5b032;
+}
+
+.royal-ribbon-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmerSlide 4s infinite ease-in-out;
+}
+
+/* Diagonal Corner Ribbon for Cards */
+.card-corner-ribbon {
+  position: absolute;
+  top: 18px;
+  right: -32px;
+  width: 130px;
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 5px 0;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.card-corner-ribbon.royal {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+}
+
+.card-corner-ribbon.silver {
+  background: linear-gradient(135deg, #475569, #64748b);
+}
+
+/* Floating Card Class */
+.animate-float {
+  animation: royalFloat 4s ease-in-out infinite;
+}
+
+/* --- Scroll Reveal Animations via IntersectionObserver --- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.22s; }
+.reveal-delay-3 { transition-delay: 0.32s; }
+.reveal-delay-4 { transition-delay: 0.42s; }
+
+/* --- 3D Magnetic Card Tilts --- */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px -8px rgba(30, 58, 138, 0.14),
+              0 0 0 1.5px rgba(37, 99, 235, 0.3);
+}
+
+/* --- Accessibility: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .royal-ribbon-banner::after {
+    display: none;
+  }
+}
